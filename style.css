@@ -1,0 +1,451 @@
+/* FONTS */
+
+@font-face {
+  font-family: 'Brandon Grotesque Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Brandon Grotesque Regular'), url('../fonts/Brandon_reg.woff') format('woff');
+  }
+  
+  
+  @font-face {
+  font-family: 'Brandon Grotesque Regular Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Brandon Grotesque Regular Italic'), url('../fonts/Brandon_reg_it.woff') format('woff');
+  }
+  
+  
+  @font-face {
+  font-family: 'Brandon Grotesque Thin';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Brandon Grotesque Thin'), url('../fonts/Brandon_thin.woff') format('woff');
+  }
+  
+  
+  @font-face {
+  font-family: 'Brandon Grotesque Thin Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Brandon Grotesque Thin Italic'), url('../fonts/Brandon_thin_it.woff') format('woff');
+  }
+  
+  
+  @font-face {
+  font-family: 'Brandon Grotesque Light';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Brandon Grotesque Light'), url('../fonts/Brandon_light.woff') format('woff');
+  }
+  
+  
+  @font-face {
+  font-family: 'Brandon Grotesque Light Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Brandon Grotesque Light Italic'), url('../fonts/Brandon_light_it.woff') format('woff');
+  }
+  
+  
+  @font-face {
+  font-family: 'Brandon Grotesque Medium';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Brandon Grotesque Medium'), url('../fonts/Brandon_med.woff') format('woff');
+  }
+  
+  
+  @font-face {
+  font-family: 'Brandon Grotesque Medium Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Brandon Grotesque Medium Italic'), url('../fonts/Brandon_med_it.woff') format('woff');
+  }
+  
+  
+  @font-face {
+  font-family: 'Brandon Grotesque Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Brandon Grotesque Bold'), url('../fonts/Brandon_bld.woff') format('woff');
+  }
+  
+  
+  @font-face {
+  font-family: 'Brandon Grotesque Bold Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Brandon Grotesque Bold Italic'), url('../fonts/Brandon_bld_it.woff') format('woff');
+  }
+  
+  
+  @font-face {
+  font-family: 'Brandon Grotesque Black';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Brandon Grotesque Black'), url('../fonts/Brandon_blk.woff') format('woff');
+  }
+  
+  
+  @font-face {
+  font-family: 'Brandon Grotesque Black Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Brandon Grotesque Black Italic'), url('../fonts/Brandon_blk_it.woff') format('woff');
+  }
+
+  @font-face {
+    font-family: 'Knockout HTF69-FullLiteweight';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Knockout HTF69-FullLiteweight'), url('../fonts/Knockout-HTF69FullLiteweight-Regular.woff') format('woff');
+    }
+
+/* END OF FONTS */
+
+
+html,
+body,
+header,
+.view {
+  height: 100%;
+  font-family: 'Brandon Grotesque Regular';
+}
+
+body {
+  padding-right: 0 !important;
+  background: #f2f2f2;
+}
+
+@media (max-width: 740px) {
+  html,
+  body,
+  header,
+  .view {
+    height: 100vh;
+  }
+}
+
+.top-nav-collapse {
+  background-color: #78909c !important;
+}
+
+.navbar:not(.top-nav-collapse) {
+  background: transparent !important;
+}
+
+@media (max-width: 991px) {
+  .navbar:not(.top-nav-collapse) {
+    background: #78909c !important;
+  }
+}
+
+h1 {
+  letter-spacing: 8px;
+}
+
+.hr-light {
+  border-top: 3px solid #fff;
+  width: 80px;
+}
+
+.view .mask {
+  display: flex;
+}
+
+.rgba-black-light, .rgba-black-light:after {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.navbar.navbar-dark .breadcrumb .nav-item .nav-link, .navbar.navbar-dark .navbar-nav .nav-item .nav-link {
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+  font-size: 0.8rem;
+  margin-right: 2em;
+  margin-left: 2em;
+}
+
+.navbar-brand {
+  margin-right: 2em;
+  margin-left: 2em;
+}
+
+.navbar:not(.top-nav-collapse) {
+  background-color: #0000009c !important;
+}
+
+/* Scroll-down button */
+
+.scroll-down {
+  opacity: 1;
+  -webkit-transition: all .5s ease-in 3s;
+  transition: all .5s ease-in 3s;
+}
+
+.scroll-down {
+  position: absolute;
+  top: 50vh;
+  left: 50%;
+  margin-left: -16px;
+  display: block;
+  width: 40px;
+  height:40px;
+  border: 2px solid #FFF;
+  background-size: 14px auto;
+  border-radius: 50%;
+  z-index: 2;
+  -webkit-animation: bounce 2s infinite 2s;
+  animation: bounce 2s infinite 2s;
+  -webkit-transition: all .2s ease-in;
+  transition: all .2s ease-in;
+  transform: scale(1)
+}
+
+.scroll-down:before {
+    position: absolute;
+    top: calc(50% - 8px);
+    left: calc(50% - 6px);
+    transform: rotate(-45deg);
+    display: block;
+    width: 12px;
+    height: 12px;
+    content: "";
+    border: 2px solid white;
+    border-width: 0px 0 2px 2px;
+}
+
+@keyframes bounce {
+  0%,
+  100%,
+  20%,
+  50%,
+  80% {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+  60% {
+    -webkit-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    transform: translateY(-5px);
+  }
+}
+
+/* End of Scroll-down button */
+
+#jay {
+  letter-spacing: 3px;
+  font-family: 'Brandon Grotesque Bold';
+}
+#hearthover {
+  transition: color 0.5s ease-in-out;
+}
+#hearthover:hover{
+  color: #c60000 !important
+}
+#eyehover{
+  transition: color 0.5s ease-in-out;
+}
+#eyehover:hover{
+  color: black !important
+}
+#carthover {
+  transition: color 0.5s ease-in-out;
+}
+#carthover:hover{
+  color: darkblue !important
+}
+
+#MainHeading {
+  font-family: 'Italianno', cursive  !important;
+  letter-spacing: 4px;
+  font-size: 7rem;
+  text-transform: none !important;
+}
+
+main {
+  margin-bottom: 3rem;
+}
+
+.logo {
+  width: 40px;
+}
+
+.navbar-nav {
+  display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.modal-footer {
+  border-bottom: 1px solid #dee2e6;
+}
+
+.logreg {
+  text-align:center;
+}
+
+#reg, #logg {
+  text-transform:uppercase;
+  letter-spacing: 0.05em;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+/* SHOP ITEMS  */
+
+.card-footer {
+  background-color: white;
+}
+
+#clothname {
+  color:black;
+}
+
+
+
+.luxfooter {
+  font-family: 'Italianno';
+  font-size: 3.5rem;
+  letter-spacing: 0.05em;
+}
+.top-nav-collapse {
+background-color: #325f76 !important;
+}
+
+#panel {
+  background-color: #0000009c !important;
+  position: fixed;
+  margin: 0;
+  left: 3%;
+  top: 10%;
+  display: none;
+  border: 1px solid white;
+  z-index: 20;
+}
+
+#showcase {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn-outline-white {
+  border: 1px solid #fff !important;
+}
+
+#panelbody {
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 0.8rem;
+  margin-top: -20px;
+}
+
+.colu {
+  padding-top:1.5rem !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#cart {
+  background-color: white;
+}
+
+
+.cart-row {
+  border-bottom: 1px solid grey;
+}
+
+#cartpic {
+  width: 100%;
+  max-width: 120px;
+}
+
+.fa.fa-times {
+font-size: 25px;
+    }
+
+.cart-total-price {
+  display: flex;
+   justify-content: flex-end;
+   padding:1rem;
+}
+
+.plus-btn, .minus-btn {
+  width: 30px;
+    height: 30px;
+    background-color: #E1E8EE;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.plus-btn:focus {
+outline:none;
+}
+.minus-btn:focus {
+outline:none;
+}
+
+ .cart-quantity-input {
+  text-align: center;
+  width: 50px;
+  font-size: 16px;
+  color: #43484D;
+  font-weight: 300;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button {  
+
+   opacity: 1;
+
+} 
+
+
+.pb-5, .py-5 {
+  background-color:white;
+  border-radius: 10px;
+  padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+.md-form.md-outline input[type="text"], .md-form.md-outline input[type="password"], .md-form.md-outline input[type="email"], .md-form.md-outline input[type="url"], .md-form.md-outline input[type="time"], .md-form.md-outline input[type="date"], .md-form.md-outline input[type="datetime-local"], .md-form.md-outline input[type="tel"], .md-form.md-outline input[type="number"], .md-form.md-outline input[type="search-md"], .md-form.md-outline input[type="search"], .md-form.md-outline textarea.md-textarea {
+  color: #666;
+  height: auto;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #eaeaea;
+  border-radius: 2px;
+  background: #fafafa;
+  box-shadow: none;
+  box-sizing: border-box;
+  transition: all .2s linear;
+}
+
+.socialb {
+  margin-top:40px;
+}
+
+.plus {
+  transition: all 0.5s ease-in-out;
+}
+.plus:hover{
+  transform: scale(1.5);
+} 
+
+.minus {
+  transition: all 0.5s ease-in-out;
+}
+.minus:hover{
+  transform: scale(1.5);
+} 

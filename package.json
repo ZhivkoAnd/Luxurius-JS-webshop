@@ -1,0 +1,9 @@
+{
+  "devDependencies": {
+    "cssnano": "^4.1.10"
+  },
+  "dependencies": {
+    "firebase": "^7.16.0",
+    "firebase-auth": "^7.16.0"
+  }
+}
